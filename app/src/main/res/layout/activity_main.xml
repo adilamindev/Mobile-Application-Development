@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <!--   textVeiw2   -->
+        <TextView
+            android:id="@+id/txtVeiw1"
+            android:layout_width="178dp"
+            android:layout_height="66dp"
+            android:foregroundTint="#EB1616"
+            android:gravity="center"
+            android:text="Thisistextbox"
+            android:textColor="#000000"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="175dp"
+            android:layout_height="70dp"
+            android:text="TextView" />
+        <!--EditVeiw-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:singleLine="true" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#2196f3"
+            android:text="click"
+
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#3296f3"
+            android:checked="false"
+            android:text="I agree to terms" />
+
+        <RadioButton
+            android:id="@+id/buttonid1"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:buttonTint="#ff5722"
+            android:checked="true"
+            android:text="Radiobutton"
+
+            />
+
+        <ToggleButton
+            android:id="@+id/togglebutton1"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#4caf50"
+            android:checked="true"
+            android:textOff="wifi off"
+            android:textOn="Wifi On"
+
+            />
+
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Switch"
+            android:thumbTint="#ff9900"
+            android:trackTint="#ff7722" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="50dp"
+            android:layout_width="400px"
+            android:id="@+id/progressbar1"
+            android:max="100"
+            android:progress="40"
+            android:progressTint="#ff8800"
+
+
+            />
+        <ProgressBar
+        android:layout_height="50dp"
+        android:layout_width="400px"
+        android:id="@+id/progressbar2"
+        />
+
+
+
+        <Button
+            android:id="@+id/btnGotoSecond"
+            android:layout_width="102dp"
+            android:layout_height="59dp"
+            android:text="second" />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
